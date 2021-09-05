@@ -1,0 +1,5 @@
+Package: theme_lto
+Type: Package
+Title: Adds LTO layer to ggplot
+Version: 0.0.1.0
+RoxygenNote: 7.1.1

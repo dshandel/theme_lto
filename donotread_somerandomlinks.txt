@@ -1,0 +1,26 @@
+### Comments:
+## to use in individual plots:
+# facet_rep_wrap(~microsphere, scales = 'free', repeat.tick.labels = TRUE)
+
+# lemon library
+# coord_flex_cart(bottom=brackets_horizontal(tick.length=0, lengt = 0.09)) 
+
+# for making gaps in y axis: 
+#https://tobiasbusch.xyz/an-r-package-for-everything-ep2-gaps
+
+
+# understanding colours
+# http://www.sthda.com/english/wiki/the-elements-of-choosing-colors-for-great-data-visualization-in-r
+
+# some other nice visualisation ideas: 
+
+# https://beep-boopr.github.io/ubcBIOL548L/articles/group-02_Piping-single-panel-ggplot-figs.html
+# https://beep-boopr.github.io/ubcBIOL548L/articles/group-03_Using-cowplot-multi-panel.html
+
+# patient timeline
+
+# https://www.cell.com/cell/fulltext/S0092-8674(17)30832-2?_returnURL=https%3A%2F%2Flinkinghub.elsevier.com%2Fretrieve%2Fpii%2FS0092867417308322%3Fshowall%3Dtrue#secsectitle0065
+
+
+This source was used to make the package
+https://ourcodingclub.github.io/tutorials/writing-r-package/

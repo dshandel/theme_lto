@@ -4,6 +4,6 @@ Title: Adds LTO layer to ggplot
 Version: 0.0.1.0
 License: GPL (>= 2)
 RoxygenNote: 7.1.1
-Authors@R: person("Daan", "Andel", role = "aut",
+Authors@R: person("Daan", "Andel", role = c("aut","cre", "ctb"),
                      email = "d.s.h.andel-3@umcutrecht.nl")
 Maintainer: Daan Andel <d.s.h.andel-3@umcutrecht.nl>

@@ -219,11 +219,11 @@ scale_colour_org <- function(data) {
   library(tidyverse)
   color_org <- c(HUB181I = "#8491B4FF", 
                  HUB005 = "#E64B35FF", 
-                 HUB062 = "#00A087FF", 
+                 HUB062 = "#91D1C2FF", 
                  HUB015 = "#4DBBD5FF",  
                  HUB106 = "#3C5488FF", 
-                 HUB183 = "#91D1C2FF", 
-                 HUB175 = "#F39B7FFF",
+                 HUB183 = "#F39B7FFF", 
+                 HUB175 = "#00A087FF",
                  HUB197 = 'grey')
   
   orgs <- color_org[names(color_org) %in% data$cline]
@@ -244,11 +244,11 @@ scale_fill_org <- function(data) {
   library(tidyverse)
   color_org <- c(HUB181I = "#8491B4FF", 
                  HUB005 = "#E64B35FF", 
-                 HUB062 = "#00A087FF", 
+                 HUB062 = "#91D1C2FF", 
                  HUB015 = "#4DBBD5FF",  
                  HUB106 = "#3C5488FF", 
-                 HUB183 = "#91D1C2FF", 
-                 HUB175 = "#F39B7FFF",
+                 HUB183 = "#F39B7FFF", 
+                 HUB175 = "#00A087FF",
                  HUB197 = 'grey')
   
   orgs <- color_org[names(color_org) %in% data$cline]

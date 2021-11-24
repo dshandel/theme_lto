@@ -27,10 +27,9 @@
 #' # Adding Nature Publishing group themes colours.
 #' plot + theme_lto() + scale_colour_lto_trans()
 #' @export
-
-theme_lto <- function(base_size=20, 
+theme_lto2<- function(base_size=16, 
                       base_family="sans", 
-                      text_size = 20, 
+                      text_size = 16, 
                       grid = FALSE, 
                       facet_box = TRUE,
                       legend_position = 'top',
@@ -50,8 +49,8 @@ theme_lto <- function(base_size=20,
   packages_theme_lto <- c('ggthemes', 'scales', 'cowplot', 'lemon', 'ggsci', 'tidyverse')
   
   install.packages(setdiff(packages_theme_lto, rownames(installed.packages()))) 
-
-    # loading package
+  
+  # loading package
   library(ggthemes)
   library(scales)
   library(cowplot)
@@ -62,64 +61,64 @@ theme_lto <- function(base_size=20,
   (theme_foundation(base_size=base_size, base_family=base_family) 
     + theme_cowplot() # use theme cowplot as base theme. 
     + theme(
-            # specifiying text characteristics. 
-            plot.title = element_text(face = "bold",  
-                                      size = rel(1.2), hjust = 0.5), # adjust size and posiition
-            text = element_text(size = text_size, family = base_family), 
-            axis.title = element_text(face = "bold",size = rel(1)),
-            axis.title.y = element_text(margin = margin(t = 0, r = 20, b = 0, l = 0),
-                                        angle=90, vjust = 3.7), # angle 90 degrees, adjust vertical (away from plot)
-            axis.title.x = element_text(vjust = -2, 
-                                        margin = margin(t = 15, r = 0, b =0, l = 0)), # adjust position (away from plot) 
-            axis.text = element_text(), 
-            
-            # define characteristics of the x and y axis lines and ticks. 
-            axis.ticks.length=unit(.30, "cm"),
-            axis.line = element_line(colour="black"), 
-            axis.ticks = element_line(colour="black"), 
-            axis.text.y = element_text(margin = margin(r = 10), size = 18),
-            axis.text.x = element_text(margin = margin(t = 8), size = 18),
-            
-            
-            # defining some legend characteristics. # you might need to change these according to 
-            # your plot. 
-            legend.key = element_rect(colour = NA),
-            legend.position = (if (legend_position == 'topleft') {
-              c(0.05, 0.85)
-            } else if (legend_position == 'topright') {
-              c(0.70, 0.85)
-            } else if (legend_position == 'bottomleft') {
-              c(0.02, 0.25)
-            } else if (legend_position == 'bottomright') {
-              c(0.70, 0.25)
-            } else 
-              legend_position),
-            legend.direction = ifelse(legend_position %in% c('bottom', 'top'), 'horizontal', 'vertical'), 
-            legend.margin = unit(0, "cm"),
-            legend.title = (if(legend_title == TRUE) {
-              element_text(face="italic")
-            } else
-              element_blank()),
-            
-            # ifelse(legend_position %in% c('bottom','top'), "horizontal", "vertical")
-            
-            # defining panel and plot characteristics
-            # if the user defined grid = TRUE, show a grid in the plot with grey colour. 
-            panel.grid.major = element_line(colour= ifelse(grid == TRUE, "#f0f0f0", NA), size = 1.2), 
-            panel.grid.minor = element_blank(),
-            plot.margin=unit(c(10,5,5,5),"mm"),
-            panel.background = element_rect(colour = NA), # set panel background colour to white
-            plot.background = element_rect(colour = NA), # set plot background colour to white
-            panel.border = element_rect(colour = NA), # no panel border
-            
-            # define some facet_wrap/facet_grid statistics
-            strip.background=element_rect(colour= ifelse(facet_box == TRUE, 'black', NA), 
-                                          fill= NA,
-                                          size = 2,
-                                          linetype = 'solid'),
-            strip.text = element_text(face="bold")
+      # specifiying text characteristics. 
+      plot.title = element_text(face = "bold",  
+                                size = rel(1.2), hjust = 0.5), # adjust size and posiition
+      text = element_text(size = text_size, family = base_family), 
+      axis.title = element_text(face = "bold",size = rel(1)),
+      axis.title.y = element_text(margin = margin(t = 0, r = 20, b = 0, l = 0),
+                                  angle=90, vjust = 3.7), # angle 90 degrees, adjust vertical (away from plot)
+      axis.title.x = element_text(vjust = -2, 
+                                  margin = margin(t = 15, r = 0, b =0, l = 0)), # adjust position (away from plot) 
+      axis.text = element_text(), 
+      
+      # define characteristics of the x and y axis lines and ticks. 
+      axis.ticks.length=unit(.2, "cm"),
+      axis.line = element_line(colour="black"), 
+      axis.ticks = element_line(colour="black"), 
+      axis.text.y = element_text(margin = margin(r = 10), size = 14),
+      axis.text.x = element_text(margin = margin(t = 8), size = 14),
+      
+      
+      # defining some legend characteristics. # you might need to change these according to 
+      # your plot. 
+      legend.key = element_rect(colour = NA),
+      legend.position = (if (legend_position == 'topleft') {
+        c(0.05, 0.85)
+      } else if (legend_position == 'topright') {
+        c(0.70, 0.85)
+      } else if (legend_position == 'bottomleft') {
+        c(0.02, 0.25)
+      } else if (legend_position == 'bottomright') {
+        c(0.70, 0.25)
+      } else 
+        legend_position),
+      legend.direction = ifelse(legend_position %in% c('bottom', 'top'), 'horizontal', 'vertical'), 
+      legend.margin = unit(0, "cm"),
+      legend.title = (if(legend_title == TRUE) {
+        element_text(face="italic")
+      } else
+        element_blank()),
+      
+      # ifelse(legend_position %in% c('bottom','top'), "horizontal", "vertical")
+      
+      # defining panel and plot characteristics
+      # if the user defined grid = TRUE, show a grid in the plot with grey colour. 
+      panel.grid.major = element_line(colour= ifelse(grid == TRUE, "#f0f0f0", NA), size = 1.2), 
+      panel.grid.minor = element_blank(),
+      plot.margin=unit(c(10,5,5,5),"mm"),
+      panel.background = element_rect(colour = NA), # set panel background colour to white
+      plot.background = element_rect(colour = NA), # set plot background colour to white
+      panel.border = element_rect(colour = NA), # no panel border
+      
+      # define some facet_wrap/facet_grid statistics
+      strip.background=element_rect(colour= ifelse(facet_box == TRUE, 'black', NA), 
+                                    fill= NA,
+                                    size = 2,
+                                    linetype = 'solid'),
+      strip.text = element_text(face="bold")
     ))
-
+  
 }
 
 

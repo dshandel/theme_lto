@@ -27,7 +27,7 @@
 #' # Adding Nature Publishing group themes colours.
 #' plot + theme_lto() + scale_colour_lto_trans()
 #' @export
-theme_lto2<- function(base_size=16, 
+theme_lto<- function(base_size=16, 
                       base_family="sans", 
                       text_size = 16, 
                       grid = FALSE, 

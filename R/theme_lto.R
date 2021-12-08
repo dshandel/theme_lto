@@ -27,13 +27,13 @@
 #' # Adding Nature Publishing group themes colours.
 #' plot + theme_lto() + scale_colour_lto_trans()
 #' @export
-theme_lto<- function(base_size=16, 
-                      base_family="sans", 
-                      text_size = 16, 
-                      grid = FALSE, 
-                      facet_box = TRUE,
-                      legend_position = 'top',
-                      legend_title = FALSE) {
+theme_lto2<- function(base_size=16, 
+                     base_family="sans", 
+                     text_size = 16, 
+                     grid = FALSE, 
+                     facet_box = TRUE,
+                     legend_position = 'top',
+                     legend_title = FALSE) {
   # base_size = general size of the plot
   # text_sizes = general sie of the texts in the plot. 
   # grid: if TRUE shows grid in the plot. (default FALSE)
@@ -73,7 +73,7 @@ theme_lto<- function(base_size=16,
       axis.text = element_text(), 
       
       # define characteristics of the x and y axis lines and ticks. 
-      axis.ticks.length=unit(.1, "cm"),
+      axis.ticks.length=unit(.25, "cm"),
       axis.line = element_line(colour="black"), 
       axis.ticks = element_line(colour="black"), 
       axis.text.y = element_text(margin = margin(r = 6), size = 14),

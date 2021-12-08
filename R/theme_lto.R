@@ -73,11 +73,11 @@ theme_lto2<- function(base_size=16,
       axis.text = element_text(), 
       
       # define characteristics of the x and y axis lines and ticks. 
-      axis.ticks.length=unit(.2, "cm"),
+      axis.ticks.length=unit(.1, "cm"),
       axis.line = element_line(colour="black"), 
       axis.ticks = element_line(colour="black"), 
-      axis.text.y = element_text(margin = margin(r = 10), size = 14),
-      axis.text.x = element_text(margin = margin(t = 8), size = 14),
+      axis.text.y = element_text(margin = margin(r = 6), size = 14),
+      axis.text.x = element_text(margin = margin(t = 6), size = 14),
       
       
       # defining some legend characteristics. # you might need to change these according to 

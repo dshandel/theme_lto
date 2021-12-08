@@ -27,9 +27,9 @@
 #' # Adding Nature Publishing group themes colours.
 #' plot + theme_lto() + scale_colour_lto_trans()
 #' @export
-theme_lto<- function(base_size=16, 
+theme_lto<- function(base_size=22, 
                      base_family="sans", 
-                     text_size = 16, 
+                     text_size = 22, 
                      grid = FALSE, 
                      facet_box = TRUE,
                      legend_position = 'top',
@@ -73,11 +73,11 @@ theme_lto<- function(base_size=16,
       axis.text = element_text(), 
       
       # define characteristics of the x and y axis lines and ticks. 
-      axis.ticks.length=unit(.25, "cm"),
-      axis.line = element_line(colour="black"), 
-      axis.ticks = element_line(colour="black"), 
-      axis.text.y = element_text(margin = margin(r = 6), size = 14),
-      axis.text.x = element_text(margin = margin(t = 6), size = 14),
+      axis.ticks.length=unit(.4, "cm"),
+      axis.line = element_line(colour="black", size = 1.2), 
+      axis.ticks = element_line(colour="black", size = 1.2), 
+      axis.text.y = element_text(margin = margin(r = 10), size = 18),
+      axis.text.x = element_text(margin = margin(t = 10), size = 18),
       
       
       # defining some legend characteristics. # you might need to change these according to 

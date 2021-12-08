@@ -76,8 +76,8 @@ theme_lto<- function(base_size=20,
       axis.ticks.length=unit(.4, "cm"),
       axis.line = element_line(colour="black", size = 1.2), 
       axis.ticks = element_line(colour="black", size = 1.2), 
-      axis.text.y = element_text(margin = margin(r = 10), size = 16),
-      axis.text.x = element_text(margin = margin(t = 10), size = 16),
+      axis.text.y = element_text(margin = margin(r = 10), size = 18),
+      axis.text.x = element_text(margin = margin(t = 10), size = 18),
       
       
       # defining some legend characteristics. # you might need to change these according to 
